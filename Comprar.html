@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="violao.png" type="image/x-icon">
+    <title>Comprar</title>
+</head>
+<body>
+    <div id="product">
+        <h1>Produto Curso de Violão na prática de hinos</h1>
+        <p>Curso de violão com aulas de campo harmônico e técnicas para tocar qualquer melodia apénas com teorias de acompanhamento, ritimo e dedilhado. alem de conhecimento para tocar melodias solando.</p>
+        <p>Preço: R$ <span id="price">100</span></p>
+        <label for="quantity">Quantidade:</label>
+        <input type="number" id="quantity" value="1">
+        <button onclick="calculateTotal()">Calcular Total</button>
+        <p>Total: R$ <span id="total">100</span></p>
+        <button onclick="buy()">Comprar</button>
+    </div>
+    
+    <script>
+    function calculateTotal() {
+        var price = parseFloat(document.getElementById('price').innerText);
+        var quantity = parseInt(document.getElementById('quantity').value);
+        var total = price * quantity;
+        document.getElementById('total').innerText = total.toFixed(2);
+    }
+    
+    function buy() {
+        var total = parseFloat(document.getElementById('total').innerText);
+        alert('Total da compra: R$ ' + total.toFixed(2) + '. Em breve você receberá seu pedido.');
+    }
+    </script>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body {
+    text-align: center;
+    padding: 80px;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(212, 75, 11);
+    font-size: 2vw;
+
+    
+    
+}
+
+h3{
+    font-family: 'Times New Roman', Times, serif ;
+    color: gray;
+    font-size: 2vw;
+
+}
+
+.content {
+   
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+img{
+    position: center;
+    max-width: 70%; /* A imagem se ajustará automaticamente à largura do seu contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu ul li {
+    display: inline-block;
+}
+.menu ul li a {
+    display: block;
+    padding: 10px 20px;
+    color: #945e21;
+    text-decoration: none;
+}
+
+.menu ul li a:hover {
+    background-color: #007bff;
+}
+
+.menu ul li a.comprar {
+    background-color: #007bff;
+}
+
+.menu ul li a.comprar:hover {
+    background-color: #007bff;
+}
